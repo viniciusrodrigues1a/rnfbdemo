@@ -70,15 +70,10 @@ sed -i -e $'s/AppDelegate.h"/AppDelegate.h"\\\n#import <Firebase.h>/' ios/rnfbde
 rm -f ios/rnfbdemo/AppDelegate.m*-e
 sed -i -e $'s/RCTBridge \*bridge/if ([FIRApp defaultApp] == nil) { [FIRApp configure]; }\\\n  RCTBridge \*bridge/' ios/rnfbdemo/AppDelegate.m*
 rm -f ios/rnfbdemo/AppDelegate.m*-e
-echo "Adding basic java integration - gradle plugin dependency and call"
-sed -i -e $'s/dependencies {/dependencies {\\\n        classpath "com.google.gms:google-services:4.3.13"/' android/build.gradle
-rm -f android/build.gradle??
-sed -i -e $'s/apply plugin: "com.android.application"/apply plugin: "com.android.application"\\\napply plugin: "com.google.gms.google-services"/' android/app/build.gradle
-rm -f android/app/build.gradle??
 
 # Allow explicit SDK version control by specifying our iOS Pods and Android Firebase Bill of Materials
 echo "Adding upstream SDK overrides for precise version control"
-echo "project.ext{set('react-native',[versions:[firebase:[bom:'30.3.2'],],])}" >> android/build.gradle
+#echo "project.ext{set('react-native',[versions:[firebase:[bom:'30.3.2'],],])}" >> android/build.gradle
 sed -i -e $'s/  target \'rnfbdemoTests\' do/  $FirebaseSDKVersion = \'9.4.0\'\\\n  target \'rnfbdemoTests\' do/' ios/Podfile
 rm -f ios/Podfile??
 
@@ -148,28 +143,15 @@ yarn add \
 # Crashlytics - repo, classpath, plugin, dependency, import, init
 echo "Setting up Crashlytics - package, gradle plugin"
 yarn add "@react-native-firebase/crashlytics"
-sed -i -e $'s/dependencies {/dependencies {\\\n        classpath "com.google.firebase:firebase-crashlytics-gradle:2.9.1"/' android/build.gradle
-rm -f android/build.gradle??
-sed -i -e $'s/"com.google.gms.google-services"/"com.google.gms.google-services"\\\napply plugin: "com.google.firebase.crashlytics"/' android/app/build.gradle
-rm -f android/app/build.gradle??
-sed -i -e $'s/proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"/proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"\\\n            firebaseCrashlytics {\\\n                nativeSymbolUploadEnabled true\\\n                unstrippedNativeLibsDir "build\/intermediates\/merged_native_libs\/release\/out\/lib"\\\n            }/' android/app/build.gradle
-rm -f android/app/build.gradle??
 
 
 # Performance - classpath, plugin, dependency, import, init
 echo "Setting up Performance - package, gradle plugin"
 yarn add "@react-native-firebase/perf"
-rm -f android/app/build.gradle??
-sed -i -e $'s/dependencies {/dependencies {\\\n        classpath "com.google.firebase:perf-plugin:1.4.1"/' android/build.gradle
-rm -f android/build.gradle??
-sed -i -e $'s/"com.google.gms.google-services"/"com.google.gms.google-services"\\\napply plugin: "com.google.firebase.firebase-perf"/' android/app/build.gradle
-rm -f android/app/build.gradle??
 
 # App Distribution - classpath, plugin, dependency, import, init
 echo "Setting up Crashlytics - package, gradle plugin"
 yarn add "@react-native-firebase/app-distribution"
-sed -i -e $'s/dependencies {/dependencies {\\\n        classpath "com.google.firebase:firebase-appdistribution-gradle:3.0.2"/' android/build.gradle
-rm -f android/build.gradle??
 
 # I'm not going to demonstrate messaging and notifications. Everyone gets it wrong because it's hard. 
 # You've got to read the docs and test *EVERYTHING* one feature at a time.
@@ -182,16 +164,6 @@ printf "{\n  \"react-native\": {\n    \"crashlytics_disable_auto_disabler\": tru
 # Copy in our demonstrator App.js
 echo "Copying demonstrator App.js"
 rm ./App.js && cp ../App.js ./App.js
-
-# Another Java build tweak - or gradle runs out of memory during the build
-echo "Increasing memory available to gradle for android java build"
-echo "org.gradle.jvmargs=-Xmx3072m -XX:MaxPermSize=1024m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8" >> android/gradle.properties
-
-# Turn on Hermes for faster startup - but only for android, on ios it crashes in release and doesn't load HermesRuntime anyway?
-# sed -i -e $'s/hermes_enabled => flags\[\:hermes_enabled\]/hermes_enabled => true/' ios/Podfile
-# rm -f ios/Podfile??
-sed -i -e $'s/enableHermes\: false/enableHermes\: true/' android/app/build.gradle
-rm -f android/app/build.gradle??
 
 # Apple builds in general have a problem with architectures on Apple Silicon and Intel, and doing some exclusions should help
 sed -i -e $'s/react_native_post_install(installer)/react_native_post_install(installer)\\\n    \\\n    installer.aggregate_targets.each do |aggregate_target|\\\n      aggregate_target.user_project.native_targets.each do |target|\\\n        target.build_configurations.each do |config|\\\n          config.build_settings[\'ONLY_ACTIVE_ARCH\'] = \'YES\'\\\n          config.build_settings[\'EXCLUDED_ARCHS\'] = \'i386\'\\\n        end\\\n      end\\\n      aggregate_target.user_project.save\\\n    end/' ios/Podfile
@@ -281,19 +253,7 @@ if [ "$(uname)" == "Darwin" ]; then
     # WIP This requires a CLI patch to the iOS platform to accept a UDID it cannot probe, and to set type to catalyst
     npx react-native run-ios --udid "$CATALYST_DESTINATION"
   fi
-
-  # workaround for poorly setup Android SDK environments
-  USER=$(whoami)
-  echo "sdk.dir=/Users/$USER/Library/Android/sdk" > android/local.properties
 fi
-
-echo "Configuring Android release build for ABI splits and code shrinking"
-sed -i -e $'s/def enableSeparateBuildPerCPUArchitecture = false/def enableSeparateBuildPerCPUArchitecture = true/' android/app/build.gradle
-rm -f android/app/build.gradle??
-sed -i -e $'s/def enableProguardInReleaseBuilds = false/def enableProguardInReleaseBuilds = true/' android/app/build.gradle
-rm -f android/app/build.gradle??
-sed -i -e $'s/universalApk false/universalApk true/' android/app/build.gradle
-rm -f android/app/build.gradle??
 
 # If we are on WSL the user needs to now run it from the Windows side
 # Getting it to run from WSL is a real mess (it is possible, but not recommended)
@@ -308,23 +268,3 @@ if [ "$(uname -a | grep Linux | grep -c microsoft)" == "1" ]; then
   echo "npx react-native run-android"
   exit
 fi
-
-# uninstall it (just in case, otherwise ABI-split-generated version codes will prevent debug from installing)
-pushd android
-./gradlew uninstallRelease
-popd
-
-# Run it for Android (assumes you have an android emulator running)
-echo "Running android app in release mode"
-npx react-native run-android --variant release --no-jetifier
-
-# Let it start up, then uninstall it (otherwise ABI-split-generated version codes will prevent debug from installing)
-sleep 30
-pushd android
-./gradlew uninstallRelease
-popd
-
-# may or may not be commented out, depending on if have an emulator available
-# I run it manually in testing when I have one, comment if you like
-echo "Running android app in debug mode"
-npx react-native run-android --no-jetifier
