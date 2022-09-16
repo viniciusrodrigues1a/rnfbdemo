@@ -1,4 +1,4 @@
-package com.rnfbdemo.newarchitecture;
+package com.vizz360.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.rnfbdemo.BuildConfig;
-import com.rnfbdemo.newarchitecture.components.MainComponentsRegistry;
-import com.rnfbdemo.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.vizz360.BuildConfig;
+import com.vizz360.newarchitecture.components.MainComponentsRegistry;
+import com.vizz360.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

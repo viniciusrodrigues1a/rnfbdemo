@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface rnfbdemoTests : XCTestCase
+@interface vizz360Tests : XCTestCase
 
 @end
 
-@implementation rnfbdemoTests
+@implementation vizz360Tests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {

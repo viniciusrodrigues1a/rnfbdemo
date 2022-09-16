@@ -1,4 +1,4 @@
-package com.rnfbdemo.newarchitecture.modules;
+package com.vizz360.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

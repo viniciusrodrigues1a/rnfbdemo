@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* rnfbdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rnfbdemoTests.m */; };
+		00E356F31AD99517003FC87E /* vizz360Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* vizz360Tests.m */; };
 		082A4B3297C7822CEC934DDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6DD4964817C94525095ED3D /* GoogleService-Info.plist */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		3041ED32B3D58046A71C7E83 /* Pods_rnfbdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB285E4A3998CC9342CA6CD /* Pods_rnfbdemo.framework */; };
+		3041ED32B3D58046A71C7E83 /* Pods_vizz360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB285E4A3998CC9342CA6CD /* Pods_vizz360.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		A88CCE8142048B83D977B9E1 /* Pods_rnfbdemo_rnfbdemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2709509768A9A03DF621A1FC /* Pods_rnfbdemo_rnfbdemoTests.framework */; };
+		A88CCE8142048B83D977B9E1 /* Pods_vizz360_vizz360Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2709509768A9A03DF621A1FC /* Pods_vizz360_vizz360Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,28 +23,28 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = rnfbdemo;
+			remoteInfo = vizz360;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* rnfbdemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rnfbdemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* vizz360Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vizz360Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* rnfbdemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rnfbdemoTests.m; sourceTree = "<group>"; };
-		0AB285E4A3998CC9342CA6CD /* Pods_rnfbdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rnfbdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* rnfbdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rnfbdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = rnfbdemo/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = rnfbdemo/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = rnfbdemo/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rnfbdemo/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rnfbdemo/main.m; sourceTree = "<group>"; };
-		2709509768A9A03DF621A1FC /* Pods_rnfbdemo_rnfbdemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rnfbdemo_rnfbdemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-rnfbdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnfbdemo.debug.xcconfig"; path = "Target Support Files/Pods-rnfbdemo/Pods-rnfbdemo.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-rnfbdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnfbdemo.release.xcconfig"; path = "Target Support Files/Pods-rnfbdemo/Pods-rnfbdemo.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-rnfbdemo-rnfbdemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnfbdemo-rnfbdemoTests.debug.xcconfig"; path = "Target Support Files/Pods-rnfbdemo-rnfbdemoTests/Pods-rnfbdemo-rnfbdemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnfbdemo/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-rnfbdemo-rnfbdemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnfbdemo-rnfbdemoTests.release.xcconfig"; path = "Target Support Files/Pods-rnfbdemo-rnfbdemoTests/Pods-rnfbdemo-rnfbdemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		E6DD4964817C94525095ED3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "rnfbdemo/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		00E356F21AD99517003FC87E /* vizz360Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vizz360Tests.m; sourceTree = "<group>"; };
+		0AB285E4A3998CC9342CA6CD /* Pods_vizz360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vizz360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* vizz360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vizz360.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = vizz360/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = vizz360/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = vizz360/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = vizz360/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = vizz360/main.m; sourceTree = "<group>"; };
+		2709509768A9A03DF621A1FC /* Pods_vizz360_vizz360Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vizz360_vizz360Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-vizz360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vizz360.debug.xcconfig"; path = "Target Support Files/Pods-vizz360/Pods-vizz360.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-vizz360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vizz360.release.xcconfig"; path = "Target Support Files/Pods-vizz360/Pods-vizz360.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-vizz360-vizz360Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vizz360-vizz360Tests.debug.xcconfig"; path = "Target Support Files/Pods-vizz360-vizz360Tests/Pods-vizz360-vizz360Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = vizz360/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-vizz360-vizz360Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vizz360-vizz360Tests.release.xcconfig"; path = "Target Support Files/Pods-vizz360-vizz360Tests/Pods-vizz360-vizz360Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E6DD4964817C94525095ED3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "vizz360/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A88CCE8142048B83D977B9E1 /* Pods_rnfbdemo_rnfbdemoTests.framework in Frameworks */,
+				A88CCE8142048B83D977B9E1 /* Pods_vizz360_vizz360Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,20 +61,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3041ED32B3D58046A71C7E83 /* Pods_rnfbdemo.framework in Frameworks */,
+				3041ED32B3D58046A71C7E83 /* Pods_vizz360.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* rnfbdemoTests */ = {
+		00E356EF1AD99517003FC87E /* vizz360Tests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* rnfbdemoTests.m */,
+				00E356F21AD99517003FC87E /* vizz360Tests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = rnfbdemoTests;
+			path = vizz360Tests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -85,7 +85,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* rnfbdemo */ = {
+		13B07FAE1A68108700A75B9A /* vizz360 */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -95,15 +95,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = rnfbdemo;
+			name = vizz360;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				0AB285E4A3998CC9342CA6CD /* Pods_rnfbdemo.framework */,
-				2709509768A9A03DF621A1FC /* Pods_rnfbdemo_rnfbdemoTests.framework */,
+				0AB285E4A3998CC9342CA6CD /* Pods_vizz360.framework */,
+				2709509768A9A03DF621A1FC /* Pods_vizz360_vizz360Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,9 +118,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* rnfbdemo */,
+				13B07FAE1A68108700A75B9A /* vizz360 */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* rnfbdemoTests */,
+				00E356EF1AD99517003FC87E /* vizz360Tests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -134,8 +134,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* rnfbdemo.app */,
-				00E356EE1AD99517003FC87E /* rnfbdemoTests.xctest */,
+				13B07F961A680F5B00A75B9A /* vizz360.app */,
+				00E356EE1AD99517003FC87E /* vizz360Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-rnfbdemo.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-rnfbdemo.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-rnfbdemo-rnfbdemoTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-rnfbdemo-rnfbdemoTests.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-vizz360.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-vizz360.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-vizz360-vizz360Tests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-vizz360-vizz360Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* rnfbdemoTests */ = {
+		00E356ED1AD99517003FC87E /* vizz360Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "rnfbdemoTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "vizz360Tests" */;
 			buildPhases = (
 				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -169,14 +169,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = rnfbdemoTests;
-			productName = rnfbdemoTests;
-			productReference = 00E356EE1AD99517003FC87E /* rnfbdemoTests.xctest */;
+			name = vizz360Tests;
+			productName = vizz360Tests;
+			productReference = 00E356EE1AD99517003FC87E /* vizz360Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* rnfbdemo */ = {
+		13B07F861A680F5B00A75B9A /* vizz360 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "rnfbdemo" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "vizz360" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -192,9 +192,9 @@
 			);
 			dependencies = (
 			);
-			name = rnfbdemo;
-			productName = rnfbdemo;
-			productReference = 13B07F961A680F5B00A75B9A /* rnfbdemo.app */;
+			name = vizz360;
+			productName = vizz360;
+			productReference = 13B07F961A680F5B00A75B9A /* vizz360.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "rnfbdemo" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "vizz360" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,8 +227,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* rnfbdemo */,
-				00E356ED1AD99517003FC87E /* rnfbdemoTests */,
+				13B07F861A680F5B00A75B9A /* vizz360 */,
+				00E356ED1AD99517003FC87E /* vizz360Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,15 +276,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rnfbdemo/Pods-rnfbdemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-vizz360/Pods-vizz360-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rnfbdemo/Pods-rnfbdemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-vizz360/Pods-vizz360-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnfbdemo/Pods-rnfbdemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vizz360/Pods-vizz360-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6A5E481BCCACFF3C0A8FFC21 /* [CP-User] [RNFB] Crashlytics Configuration */ = {
@@ -329,7 +329,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-rnfbdemo-rnfbdemoTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-vizz360-vizz360Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -351,7 +351,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-rnfbdemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-vizz360-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,15 +364,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rnfbdemo-rnfbdemoTests/Pods-rnfbdemo-rnfbdemoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-vizz360-vizz360Tests/Pods-vizz360-vizz360Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rnfbdemo-rnfbdemoTests/Pods-rnfbdemo-rnfbdemoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-vizz360-vizz360Tests/Pods-vizz360-vizz360Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnfbdemo-rnfbdemoTests/Pods-rnfbdemo-rnfbdemoTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vizz360-vizz360Tests/Pods-vizz360-vizz360Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -401,7 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* rnfbdemoTests.m in Sources */,
+				00E356F31AD99517003FC87E /* vizz360Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +419,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* rnfbdemo */;
+			target = 13B07F861A680F5B00A75B9A /* vizz360 */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -427,7 +427,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-rnfbdemo-rnfbdemoTests.debug.xcconfig */;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-vizz360-vizz360Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = L7TVPK85TK;
@@ -436,7 +436,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = rnfbdemoTests/Info.plist;
+				INFOPLIST_FILE = vizz360Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,19 +451,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rnfbdemo.app/rnfbdemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vizz360.app/vizz360";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-rnfbdemo-rnfbdemoTests.release.xcconfig */;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-vizz360-vizz360Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = L7TVPK85TK;
 				EXCLUDED_ARCHS = i386;
-				INFOPLIST_FILE = rnfbdemoTests/Info.plist;
+				INFOPLIST_FILE = vizz360Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -478,13 +478,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rnfbdemo.app/rnfbdemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vizz360.app/vizz360";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-rnfbdemo.debug.xcconfig */;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-vizz360.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -492,7 +492,7 @@
 				DEVELOPMENT_TEAM = L7TVPK85TK;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = i386;
-				INFOPLIST_FILE = rnfbdemo/Info.plist;
+				INFOPLIST_FILE = vizz360/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,8 +503,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rnfbdemofirebasetest;
-				PRODUCT_NAME = rnfbdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizz360firebasetest;
+				PRODUCT_NAME = vizz360;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,14 +514,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-rnfbdemo.release.xcconfig */;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-vizz360.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L7TVPK85TK;
 				EXCLUDED_ARCHS = i386;
-				INFOPLIST_FILE = rnfbdemo/Info.plist;
+				INFOPLIST_FILE = vizz360/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -532,8 +532,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rnfbdemofirebasetest;
-				PRODUCT_NAME = rnfbdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizz360firebasetest;
+				PRODUCT_NAME = vizz360;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -680,7 +680,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "rnfbdemoTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "vizz360Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -689,7 +689,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "rnfbdemo" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "vizz360" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -698,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "rnfbdemo" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "vizz360" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
